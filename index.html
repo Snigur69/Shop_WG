@@ -16,12 +16,13 @@
 
         <link rel="stylesheet" href="css/fonts/fonts.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/adaptive.css" />
         <title>NextShop</title>
     </head>
 
     <body>
         <header>
-            <div class="top_header">
+            <div class="top_header desktop_top">
                 <div class="custom_container">
                     <div class="top_left">
                         <a class="tel" href="#"
@@ -47,16 +48,16 @@
 
                         <a href="#" class="header_fav"
                             ><img src="img/like.svg" alt="" />
-                            <div class="count">1</div></a
-                        >
+                            <div class="count">1</div>
+                        </a>
                         <a href="#" class="header_cart"
                             ><img src="img/cart.svg" alt="" />
-                            <div class="count">0</div></a
-                        >
+                            <div class="count">0</div>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="bottom_header">
+            <div class="bottom_header desktop_bottom">
                 <div class="custom_container">
                     <div class="bottom_left">
                         <a href="/" class="logo"
@@ -183,18 +184,135 @@
                     </div>
                 </div>
             </div>
+            <div class="mobile_top_header">
+                <div class="container">
+                    <div class="mobile-toggle">
+                        <div class="button_menu">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>				
+                      </div>
+                      <div class="mobile_logo">
+                        <img src="img/logo.png" alt="" />
+                      </div>
+                    <div class="mobile_search_wrap">
+                        <a href="#">
+                        <img src="img/search.svg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="menu_responsive">
+                    <nav class="main_menu">
+                        <a class="mobile_catalog_trigger" role="button">
+                           Каталог
+                          </a>
+                          <div class="collapse" id="mobile_collapse_catalog">
+                            <div class="single_catalog_category">
+                                <div>
+                                    <a href="#" class="category_title">Одежда</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                </div>
+                            </div>
+                            <div class="single_catalog_category">
+                                <div>
+                                    <a href="#" class="category_title">Одежда</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                </div>
+                            </div>
+                            <div class="single_catalog_category">
+                                <div>
+                                    <a href="#" class="category_title">Одежда</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                </div>
+                            </div>
+                            <div class="single_catalog_category">
+                                <div>
+                                    <a href="#" class="category_title">Одежда</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                </div>
+                            </div>
+                            <div class="single_catalog_category">
+                                <div>
+                                    <a href="#" class="category_title">Одежда</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                </div>
+                            </div>
+                            <div class="single_catalog_category">
+                                <div>
+                                    <a href="#" class="category_title">Одежда</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                    <a href="#" class="category_link">Аксессуары</a>
+                                </div>
+                            </div>
+
+                          </div>
+                          <ul class="mob_menu">
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Как купить</a></li>
+                            <li><a href="#">Компания</a></li>
+                            <li><a href="#">Контакты</a></li>
+                          </ul>
+                    </nav>
+                    
+                    </div>		
+                  </div>
+            </div>
+            
+            <div class="mobile_bottom_header">
+                <div class="container">
+                    <div class="home">
+                        <a href="#"
+                            ><img src="img/user.svg" alt="" /> <span>Мой кабинет</span></a
+                        >
+                    </div>
+                    <div class="favourites">
+                        <a href="#" class="mobile_like"
+                            >
+                            <div class="header_fav">
+                                <img src="img/like.svg" alt="" />
+                                <div class="count">1</div>
+                            </div>
+                            <span>Избранное</span>
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="#" class="mobile_cart"
+                            ><div class="header_cart">
+                                <img  src="img/cart.svg" alt="" />
+                                <div class="count">0</div>
+                            </div>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <div id="section1">
             <div class="custom_container">
                 <div class="section1_content">
                     <div class="row">
-                        <div class="col-md-4 sec1_left">
+                        <div class="col-lg-4 sec1_left">
                             <img src="img/sec1.jpg" alt="" />
                             <img src="img/sec1_1.jpg" alt="" />
                         </div>
-                        <div class="col-md-8 sec1_right">
-                            <img src="img/sec1_2.png" alt="" />
+                        <div class="col-lg-8 sec1_right">
+                            <img class="sec_right_desktop" src="img/sec1_2.png" alt="" />
+                            <img class="sec_right_mobile" src="img/mobile_sec1.jpg" alt="" />
                         </div>
                     </div>
                     <div class="sec1_advantages">
@@ -380,8 +498,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -422,8 +540,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -464,8 +582,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -506,8 +624,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -548,8 +666,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -590,8 +708,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -632,8 +750,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -674,8 +792,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -716,8 +834,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -767,8 +885,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -809,8 +927,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -851,8 +969,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -893,8 +1011,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -944,8 +1062,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -986,8 +1104,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1028,8 +1146,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1070,8 +1188,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1112,8 +1230,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1154,8 +1272,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1196,8 +1314,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1238,8 +1356,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1289,8 +1407,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1331,8 +1449,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1373,8 +1491,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1415,8 +1533,8 @@
                                         <p class="title">
                                             Электросамокат Xiaomi Mi Scooter Pro
                                             2 (Black)
-                                        </p></a
-                                    >
+                                        </p>
+                                    </a>
                                     <div class="stars">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -1478,6 +1596,11 @@
                                 Давно выяснено, что при оценке дизайна читаемый
                                 текст мешает сосредоточиться.
                             </p>
+                            <img
+                                class="discount_item_image_before_counter"
+                                src="img/discount-count.png"
+                                alt=""
+                            />
                             <div class="counter">
                                 <div class="discount">-45%</div>
                                 <div class="days">4д</div>
@@ -1504,6 +1627,11 @@
                                 Давно выяснено, что при оценке дизайна читаемый
                                 текст мешает сосредоточиться.
                             </p>
+                            <img
+                                class="discount_item_image_before_counter"
+                                src="img/discount-count.png"
+                                alt=""
+                            />
                             <div class="counter">
                                 <div class="discount">-45%</div>
                                 <div class="days">4д</div>
@@ -1524,11 +1652,16 @@
                     <a href="#">Все Статьи</a>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4 col-lg-6">
                         <div
                             class="main_blog_item blog_item"
                             style="background: url(img/main_blog.jpg) no-repeat"
                         >
+                            <img
+                                class="blog1_image"
+                                src="img/main_blog.jpg"
+                                alt=""
+                            />
                             <div class="info">
                                 <p class="subtitle">Советы покупателям</p>
                                 <p class="text">
@@ -1540,7 +1673,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4 col-lg-3">
                         <div class="secondary_blog_item blog_item">
                             <img src="img/blog1.jpg" alt="" />
                             <div class="info">
@@ -1555,7 +1688,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4 col-lg-3">
                         <div class="secondary_blog_item blog_item">
                             <img src="img/blog2.jpg" alt="" />
                             <div class="info">
@@ -1706,7 +1839,7 @@
         <div id="section8">
             <img src="img/main_right.jpg" alt="" class="right_image" />
             <div class="custom_container">
-                <div class="col-md-6 main_left_wrap">
+                <div class="col-lg-6 main_left_wrap">
                     <div class="main_left">
                         <p class="subtitle">О компании</p>
                         <p class="title">Интернет-магазин в Киеве</p>
@@ -1750,40 +1883,64 @@
             <div class="custom_container">
                 <div class="partners_wrap">
                     <div class="row">
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part1.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part2.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part3.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part4.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part5.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part6.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part1.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part2.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part3.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part4.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part5.png" alt="" />
                         </div>
-                        <div class="col-md-2 single_partner">
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 single_partner"
+                        >
                             <img src="img/part6.png" alt="" />
                         </div>
                     </div>
