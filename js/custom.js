@@ -1,32 +1,26 @@
-jQuery(function($) {
-
-
+jQuery(function ($) {
     // ============ ADD TO FAVOURITE BUTTON ============
-    $('.add_to_fav').on('click', function() {
-        $(this).toggleClass('active');
-        $(this).find('i').toggleClass('fa-heart-o')
-        $(this).find('i').toggleClass('fa-heart')
-    })
+    $(".add_to_fav").on("click", function () {
+        $(this).toggleClass("active");
+        $(this).find("i").toggleClass("fa-heart-o");
+        $(this).find("i").toggleClass("fa-heart");
+    });
 
     // ============ ADD TO FAVOURITE BUTTON ============
 
-
     // ============ HEADER CATALOG TRIGGER ============
-    $('.header_catalog').on('click', function(){
-        $(this).toggleClass('active');
-        $('.header_catalog_content').toggleClass('active');
-    })
+    $(".header_catalog").on("click", function () {
+        $(this).toggleClass("active");
+        $(".header_catalog_content").toggleClass("active");
+    });
     // ============ HEADER CATALOG TRIGGER ============
 
-
-    if($(window).width() < 1200) {
-        $('.custom_container').addClass('container');
-        $('.custom_container').removeClass('custom_container');
+    if ($(window).width() < 1200) {
+        $(".custom_container").addClass("container");
+        $(".custom_container").removeClass("custom_container");
     }
 
-
     // ============ INSTAGRAM FEED ============
-
 
     $(window).on("load", function () {
         $.instagramFeed({
@@ -42,9 +36,8 @@ jQuery(function($) {
         });
 
         let photo_count = 7;
-        if($(window).width() < 1200) {
+        if ($(window).width() < 1200) {
             photo_count = 6;
-
         }
         $.instagramFeed({
             username: "the_snigga", //Имя пользователя
@@ -61,47 +54,65 @@ jQuery(function($) {
 
     // ============ INSTAGRAM FEED ============
 
+    // =================== MOBILE MENU ========================
+    $(".button_menu").click(function () {
+        $(this).toggleClass("active");
+        $(".menu_responsive").toggleClass("active");
+    });
 
-        // =================== MOBILE MENU ========================
-        $('.button_menu').click(function(){
-            $(this).toggleClass('active'); 
-            $('.menu_responsive').toggleClass('active');
-          });
-    
-          $(document).mouseup(function (e) {
-            if($('.menu_responsive').hasClass('active')){
-                var container = $(".menu_responsive");
-                if ((container.has(e.target).length === 0)){
-                    $('.button_menu').click();
-                }
-                if ($(e.target).parent().hasClass('button_menu')){
-                    $('.button_menu').click();
-                }
-                if ($(e.target).hasClass('button_menu')){
-                    $('.button_menu').click();
-                }
-    
-            };
-        });
-        $('.nav').on('click', function() {
-            if($('.menu_responsive').hasClass('active')) {
-                $('.button_menu').click();
+    $(document).mouseup(function (e) {
+        if ($(".menu_responsive").hasClass("active")) {
+            var container = $(".menu_responsive");
+            if (container.has(e.target).length === 0) {
+                $(".button_menu").click();
             }
-        });
-        
-        // =================== MOBILE MENU ========================
-        
-
-
-        $('.mobile_catalog_trigger').on('click', function() {
-            $('#mobile_collapse_catalog').toggle();
-            $(this).toggleClass('active');
-            if ($(this).hasClass('active')) {
-                console.log( $('.menu_responsive .main_menu').css('justify-content'))
-                $('.menu_responsive .main_menu').css('justify-content', 'space-between');
-            } else {
-                $('.menu_responsive .main_menu').css('justify-content', 'center');
+            if ($(e.target).parent().hasClass("button_menu")) {
+                $(".button_menu").click();
             }
-        })
+            if ($(e.target).hasClass("button_menu")) {
+                $(".button_menu").click();
+            }
+        }
+    });
+    $(".nav").on("click", function () {
+        if ($(".menu_responsive").hasClass("active")) {
+            $(".button_menu").click();
+        }
+    });
 
-})
+    // =================== MOBILE MENU ========================
+
+    $(".mobile_catalog_trigger").on("click", function () {
+        $("#mobile_collapse_catalog").toggle();
+        $(this).toggleClass("active");
+        if ($(this).hasClass("active")) {
+            console.log(
+                $(".menu_responsive .main_menu").css("justify-content")
+            );
+            $(".menu_responsive .main_menu").css(
+                "justify-content",
+                "space-between"
+            );
+        } else {
+            $(".menu_responsive .main_menu").css("justify-content", "center");
+        }
+    });
+
+    $(".js-range-slider").ionRangeSlider({
+        onStart: function (data) {
+            $("#filter_price_from").val(data.from);
+            $("#filter_price_to").val(data.to);
+        },
+        onChange: function (data) {
+            $("#filter_price_from").val(data.from);
+            $("#filter_price_to").val(data.to);
+        },
+        hide_min_max: true,
+        hide_from_to: true,
+    });
+
+    $("#mob_filter_trigger_btn").on("click", function () {
+        $(this).toggleClass("active");
+        $("#catalog #catalog_filter").toggleClass("visible");
+    });
+});

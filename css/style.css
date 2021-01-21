@@ -121,7 +121,9 @@
     padding: 40px 0 60px;
     background: #f9f9fa;
 }
-
+#mobile_filter_tigger {
+    display: none;
+}
 .sec1_right img {
     width: 100%;
 }
@@ -714,6 +716,7 @@
 }
 #section9 {
     padding: 50px 0 30px;
+    background: #f9f9fa;
 }
 .main_photo img {
     /* width: 100%; */
@@ -737,6 +740,7 @@
 }
 #section10 {
     padding: 30px 0 50px;
+    background: #f9f9fa;
 }
 .single_partner {
     margin-bottom: 10px;
@@ -744,6 +748,238 @@
     align-items: center;
     justify-content: center;
 }
+.page_breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0 40px;
+}
+.page_breadcrumbs a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #307fdd !important;
+}
+.page_breadcrumbs .divider {
+    margin: 0 6px;
+}
+#catalog {
+    padding-bottom: 40px;
+}
+#catalog .catalog_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+}
+#catalog #catalog_content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* min-width: 1060px; */
+    width: 1072px;
+}
+#catalog #catalog_content .single_product {
+    margin: 0 5px 30px;
+    height: fit-content;
+}
+#catalog .catalog_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#catalog #catalog_filter {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    min-width: 250px;
+}
+#catalog #catalog_filter .filter_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin: 0;
+}
+#catalog #catalog_filter .single_filter {
+    padding: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+#catalog #catalog_filter .single_filter:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+#catalog #catalog_filter .single_filter .single_filter_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1976d2;
+    margin-bottom: 0;
+}
+#catalog #catalog_filter .single_filter .price_filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#catalog #catalog_filter .single_filter .price_filter label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+}
+#catalog #catalog_filter .single_filter .price_filter input {
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.02);
+    height: 34px;
+    max-width: 70px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+#catalog #catalog_filter .single_filter .filter_checkbox_wrap {
+    margin-top: 20px;
+}
+#catalog #catalog_filter .single_filter a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1976d2;
+    margin-top: 12px;
+    display: block;
+}
+#catalog #catalog_filter .single_filter .filter_checkbox_wrap label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 15px;
+    display: block;
+}
+#catalog #catalog_filter .single_filter .filter_checkbox_wrap label:last-child {
+    margin-bottom: 0;
+}
+#catalog #catalog_filter .single_filter .filter_checkbox_wrap label span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #7b7b7b;
+}
+#catalog #catalog_filter .single_filter .filter_checkbox_wrap input {
+    height: 22px;
+    width: 22px;
+    border-radius: 0 !important;
+    background: #ffffff;
+    border: 1px solid #e3e3e3 !important;
+    vertical-align: middle;
+    margin-right: 3px;
+    display: none;
+}
+#catalog
+    #catalog_filter
+    .single_filter
+    .filter_checkbox_wrap
+    input[type="checkbox"]
+    + label:before {
+    content: " ";
+    color: #000;
+    display: inline-block;
+    font: 20px/18px FontAwesome;
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-image: initial;
+    vertical-align: middle;
+}
+#catalog
+    #catalog_filter
+    .single_filter
+    .filter_checkbox_wrap
+    input[type="checkbox"]:checked
+    + label:before {
+    content: "\f00c";
+    color: #307fdd;
+}
+#similar_container {
+    padding: 40px 0 0;
+}
+#similar_container .similar_tabs .tabs_title {
+    margin-bottom: 35px;
+}
+#similar_container .similar_tabs .tabs_title li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #b7b7b7;
+    text-decoration: none;
+    margin-right: 15px;
+}
+#similar_container .similar_tabs .tabs_title li a.active {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #2992d9;
+    border-bottom: 1px solid #2992d9;
+}
+#similar_container .similar_tabs .tabs_title {
+    border: none;
+}
+#similar_container .similar_tabs .tab-content > div > .products_wrap {
+    display: flex;
+}
+#catalog_page #section4 {
+    padding-bottom: 80px;
+}
+
+/* ==================== PRICE SLIDER ==================== */
+
+.single_filter .range_wrap .irs-grid {
+    display: none;
+}
+.single_filter .range_wrap .irs--flat .irs-handle.from > i:first-child {
+    display: none;
+}
+.single_filter .range_wrap .irs--flat .irs-handle.to > i:first-child,
+.single_filter .range_wrap .irs--flat .irs-handle.from > i:last-child {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: #1976d2;
+}
+.single_filter .range_wrap .irs--flat .irs-bar {
+    height: 4px;
+    background: #1976d2;
+    top: 26px;
+}
+.single_filter .range_wrap .irs--flat .irs-line {
+    height: 4px;
+}
+.single_filter .range_wrap .irs--flat.irs-with-grid {
+    height: 39px;
+}
+/* ==================== PRICE SLIDER ==================== */
+
+/* ==================== FOOTER ==================== */
 
 footer {
     padding: 50px 0;
