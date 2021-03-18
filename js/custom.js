@@ -115,4 +115,43 @@ jQuery(function ($) {
         $(this).toggleClass("active");
         $("#catalog #catalog_filter").toggleClass("visible");
     });
+
+    $(".object_sliders_wrap .object_main_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".object_sliders_wrap .object_help_slider",
+    });
+    $(".object_sliders_wrap .object_help_slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: ".object_sliders_wrap .object_main_slider",
+        dots: false,
+        centerMode: false,
+        arrows: false,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true,
+    });
+
+    // ============ COUNT BUTTONS ============
+    $(".count_wrap #increment").on("click", function () {
+        let num = Number($(this).parent().parent().find("#count").val());
+        $(this)
+            .parent()
+            .parent()
+            .find("#count")
+            .val(num + 1);
+    });
+
+    $(".count_wrap #decrement").on("click", function () {
+        let num = Number($(this).parent().parent().find("#count").val());
+        $(this)
+            .parent()
+            .parent()
+            .find("#count")
+            .val(num - 1);
+    });
+    // ============ COUNT BUTTONS ============
 });

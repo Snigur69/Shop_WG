@@ -32,6 +32,10 @@
     #catalog .catalog_wrap {
         justify-content: start;
     }
+    .object_info_wrap .sub_buttons div span,
+    .object_info_wrap .sub_buttons div a {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 1345px) {
@@ -93,6 +97,40 @@
         > .products_wrap
         .single_product:last-child {
         display: none;
+    }
+    .object_info_wrap .sub_buttons div {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .object_info_wrap .sub_buttons {
+        flex-wrap: wrap;
+    }
+    .object_info_wrap .prod_info_section .price_wrap .old_price {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .object_info_wrap .prod_info_section .price_wrap .new_price {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .object_info_wrap .prod_info_section .stock_wrap .in_stock {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .object_info_wrap .prod_info_section .stock_wrap .article {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .object_info_wrap .buttons_wrap .product_button {
+        font-size: 14px;
+        line-height: 18px;
+        width: 39%;
+    }
+    #object_section .object_photo_wrap .discount {
+        font-size: 16px;
+    }
+    #object_section .object_photo_wrap .add_to_fav i {
+        font-size: 30px;
     }
 }
 
@@ -351,6 +389,9 @@
     .page_breadcrumbs {
         margin-bottom: 20px;
     }
+    #object_section {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -401,6 +442,17 @@
     #similar_container .similar_tabs .tab-content > div > .products_wrap {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .object_tabs_title ul li a,
+    .object_tabs_title ul li a.active {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    #object_section {
+        margin-top: 60px;
+    }
+    .object_info_wrap .delivery .shipping_methods .shipping_method .title {
+        text-align: left;
     }
 }
 
@@ -457,6 +509,28 @@
     #similar_container .similar_tabs .tabs_title li {
         margin-bottom: 15px;
     }
+    #object_section {
+        margin-top: 100px;
+    }
+    #object_section .object_tabs {
+        margin-top: 30px;
+    }
+    .object_tabs_content .object_sliders_wrap .object_help_slider_wrap {
+        width: 15%;
+    }
+    .object_tabs_content .object_sliders_wrap .object_main_slider {
+        width: 85%;
+    }
+    .object_photo_wrap .chars_wrap .single_char {
+        width: 49%;
+    }
+    .object_info_wrap .prod_info_section .stock_wrap {
+        padding-left: 10px;
+    }
+    .object_info_wrap .prod_info_section .manuf_wrap img {
+        width: 80%;
+        max-width: 80%;
+    }
 }
 
 @media (max-width: 490px) {
@@ -468,6 +542,50 @@
         > .products_wrap
         .single_product {
         width: 258px;
+    }
+}
+
+@media (max-width: 450px) {
+    #object_section .object_title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #object_section .object_photo_wrap .discount {
+        font-size: 12px;
+        padding: 6px 14px 3px;
+    }
+    .object_info_wrap .prod_info_section .stock_wrap .article {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .object_info_wrap .prod_info_section .stock_wrap .in_stock {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .object_info_wrap .prod_info_section .price_wrap .old_price {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .object_info_wrap .prod_info_section .price_wrap .new_price {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .object_info_wrap .buttons_wrap .product_button {
+        font-size: 12px;
+        line-height: 16px;
+        width: 35%;
+    }
+    .object_tabs_content .object_sliders_wrap .object_help_slider_wrap {
+        width: 20%;
+    }
+    .object_tabs_content .object_sliders_wrap .object_main_slider {
+        width: 80%;
+    }
+    #object_section .object_photo_wrap .discount {
+        left: 25%;
+    }
+    .object_info_wrap .prod_info_section .manuf_wrap {
+        line-height: 12px;
     }
 }
 
